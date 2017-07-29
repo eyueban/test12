@@ -1,0 +1,11 @@
+$("#gradeid").change(function(){
+			var gradeid=document.getElementById("gradeid").value();
+			$.post("doListScore.action",
+				{"gradeid":gradeid},
+				function (returnData,status){
+					if(status="success"){
+						
+					}
+				},"json"
+			);
+		});
